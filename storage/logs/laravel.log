@@ -1,0 +1,527 @@
+[2020-03-23 22:47:40] production.ERROR: Command "make:migrations" is not defined.
+
+Did you mean one of these?
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:migrations\" is not defined.
+
+Did you mean one of these?
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(235): Symfony\\Component\\Console\\Application->find('make:migrations')
+#1 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/user1/Unduhan/LaravelPert4/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2020-03-23 22:48:17] production.ERROR: Command "migration" is not defined.
+
+Did you mean one of these?
+    make:migration
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"migration\" is not defined.
+
+Did you mean one of these?
+    make:migration
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status at /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(235): Symfony\\Component\\Console\\Application->find('migration')
+#1 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/user1/Unduhan/LaravelPert4/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2020-03-23 22:48:31] production.ERROR: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php:669)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(629): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(590): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#14 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(1001): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(271): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /home/user1/Unduhan/LaravelPert4/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 {main}
+
+[previous exception] [object] (PDOException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(924): call_user_func(Object(Closure))
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(959): Illuminate\\Database\\Connection->getPdo()
+#7 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(404): Illuminate\\Database\\Connection->getReadPdo()
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(330): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(662): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(629): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(590): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#17 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#18 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#19 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#22 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#23 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#24 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#25 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(1001): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(271): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /home/user1/Unduhan/LaravelPert4/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 {main}
+"} 
+[2020-03-23 22:50:18] production.ERROR: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php:669)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(629): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(590): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#14 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(1001): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(271): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /home/user1/Unduhan/LaravelPert4/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 {main}
+
+[previous exception] [object] (PDOException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(924): call_user_func(Object(Closure))
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(959): Illuminate\\Database\\Connection->getPdo()
+#7 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(404): Illuminate\\Database\\Connection->getReadPdo()
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(330): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(662): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(629): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(590): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#17 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#18 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#19 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#22 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#23 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#24 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#25 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(1001): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(271): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /home/user1/Unduhan/LaravelPert4/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 {main}
+"} 
+[2020-03-23 22:51:14] production.ERROR: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php:669)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(629): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(590): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#14 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(1001): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(271): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /home/user1/Unduhan/LaravelPert4/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 {main}
+
+[previous exception] [object] (PDOException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(924): call_user_func(Object(Closure))
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(959): Illuminate\\Database\\Connection->getPdo()
+#7 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(404): Illuminate\\Database\\Connection->getReadPdo()
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(330): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(662): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(629): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(590): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#17 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#18 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#19 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#22 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#23 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#24 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#25 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(1001): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(271): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /home/user1/Unduhan/LaravelPert4/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 {main}
+"} 
+[2020-03-23 22:52:12] production.ERROR: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php:669)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(629): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(590): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#14 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(1001): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(271): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /home/user1/Unduhan/LaravelPert4/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 {main}
+
+[previous exception] [object] (PDOException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(924): call_user_func(Object(Closure))
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(959): Illuminate\\Database\\Connection->getPdo()
+#7 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(404): Illuminate\\Database\\Connection->getReadPdo()
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(330): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(662): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(629): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(590): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#17 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#18 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#19 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#22 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#23 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#24 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#25 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(1001): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(271): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 /home/user1/Unduhan/LaravelPert4/vendor/symfony/console/Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /home/user1/Unduhan/LaravelPert4/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 {main}
+"} 
+[2020-03-23 22:52:31] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:44)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Support/helpers.php(422): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(48): tap(NULL, Object(Closure))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(24): Illuminate\\Encryption\\EncryptionServiceProvider->key(Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#4 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build(Object(Closure))
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('encrypter', Array, true)
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('encrypter', Array)
+#7 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('encrypter', Array)
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(945): Illuminate\\Foundation\\Application->make('encrypter')
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(834): Illuminate\\Container\\Container->resolveDependencies(Array)
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#14 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(160): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#16 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(683): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(658): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#19 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#20 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(613): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#21 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(170): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#22 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/user1/Unduhan/LaravelPert4/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 /home/user1/Unduhan/LaravelPert4/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 /home/user1/Unduhan/LaravelPert4/server.php(21): require_once('/home/user1/Und...')
+#38 {main}
+"} 
+[2020-03-23 22:52:31] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:44)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Support/helpers.php(422): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(48): tap(NULL, Object(Closure))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(24): Illuminate\\Encryption\\EncryptionServiceProvider->key(Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#4 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build(Object(Closure))
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('encrypter', Array, true)
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('encrypter', Array)
+#7 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('encrypter', Array)
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(945): Illuminate\\Foundation\\Application->make('encrypter')
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(834): Illuminate\\Container\\Container->resolveDependencies(Array)
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#14 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(209): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#16 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(183): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#17 /home/user1/Unduhan/LaravelPert4/public/index.php(60): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#18 /home/user1/Unduhan/LaravelPert4/server.php(21): require_once('/home/user1/Und...')
+#19 {main}
+"} 
+[2020-03-23 22:52:39] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:44)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Support/helpers.php(422): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(48): tap(NULL, Object(Closure))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(24): Illuminate\\Encryption\\EncryptionServiceProvider->key(Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#4 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build(Object(Closure))
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('encrypter', Array, true)
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('encrypter', Array)
+#7 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('encrypter', Array)
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(945): Illuminate\\Foundation\\Application->make('encrypter')
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(834): Illuminate\\Container\\Container->resolveDependencies(Array)
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#14 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(160): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#16 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(683): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(658): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#19 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#20 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(613): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#21 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(170): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#22 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/user1/Unduhan/LaravelPert4/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 /home/user1/Unduhan/LaravelPert4/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 /home/user1/Unduhan/LaravelPert4/server.php(21): require_once('/home/user1/Und...')
+#38 {main}
+"} 
+[2020-03-23 22:52:39] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:44)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Support/helpers.php(422): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(48): tap(NULL, Object(Closure))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(24): Illuminate\\Encryption\\EncryptionServiceProvider->key(Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#4 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build(Object(Closure))
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('encrypter', Array, true)
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('encrypter', Array)
+#7 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('encrypter', Array)
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(945): Illuminate\\Foundation\\Application->make('encrypter')
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(834): Illuminate\\Container\\Container->resolveDependencies(Array)
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#14 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(209): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#16 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(183): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#17 /home/user1/Unduhan/LaravelPert4/public/index.php(60): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#18 /home/user1/Unduhan/LaravelPert4/server.php(21): require_once('/home/user1/Und...')
+#19 {main}
+"} 
+[2020-03-23 22:53:09] local.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:44)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Support/helpers.php(422): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}('')
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(48): tap('', Object(Closure))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(24): Illuminate\\Encryption\\EncryptionServiceProvider->key(Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#4 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build(Object(Closure))
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('encrypter', Array, true)
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('encrypter', Array)
+#7 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('encrypter', Array)
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(945): Illuminate\\Foundation\\Application->make('encrypter')
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(834): Illuminate\\Container\\Container->resolveDependencies(Array)
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#14 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(160): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#16 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(683): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(658): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#19 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#20 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(613): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#21 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(170): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#22 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/user1/Unduhan/LaravelPert4/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 /home/user1/Unduhan/LaravelPert4/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 /home/user1/Unduhan/LaravelPert4/server.php(21): require_once('/home/user1/Und...')
+#38 {main}
+"} 
+[2020-03-23 22:53:09] local.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:44)
+[stacktrace]
+#0 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Support/helpers.php(422): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}('')
+#1 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(48): tap('', Object(Closure))
+#2 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(24): Illuminate\\Encryption\\EncryptionServiceProvider->key(Array)
+#3 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#4 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build(Object(Closure))
+#5 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('encrypter', Array, true)
+#6 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('encrypter', Array)
+#7 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('encrypter', Array)
+#8 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(945): Illuminate\\Foundation\\Application->make('encrypter')
+#9 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#10 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(834): Illuminate\\Container\\Container->resolveDependencies(Array)
+#11 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#12 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(785): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#13 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#14 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(770): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#15 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(209): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#16 /home/user1/Unduhan/LaravelPert4/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(183): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#17 /home/user1/Unduhan/LaravelPert4/public/index.php(60): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#18 /home/user1/Unduhan/LaravelPert4/server.php(21): require_once('/home/user1/Und...')
+#19 {main}
+"} 
