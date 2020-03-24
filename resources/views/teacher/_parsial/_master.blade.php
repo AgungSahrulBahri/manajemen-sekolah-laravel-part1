@@ -192,7 +192,7 @@
 
                     <div class="profile-text">
 
-                        <h5>Markarn Doe</h5>
+                        <h5>Mz Ari</h5>
 
                         <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="mdi mdi-settings"></i></a>
 
@@ -254,6 +254,8 @@
 
                             <ul aria-expanded="false" class="collapse">
 
+                                  <li><a href="{{ route('teacher.index')}}">Data Guru </a></li>
+                                {{-- <li><a href="{{ route('student.index')}}">Data Siswa </a></li> --}}
                                 <li><a href="{{ route('teacher.create')}}">Input </a></li>
 
                             </ul>
@@ -265,7 +267,8 @@
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Data </span></a>
 
                             <ul aria-expanded="false" class="collapse">
-
+{{-- <li><a href="{{ route('teacher.index')}}">Data Guru </a></li> --}}
+                                <li><a href="{{ route('student.index')}}">Data Siswa </a></li>
                                 <li><a href="{{ route('student.create')}}">Input </a></li>
 
                             </ul>

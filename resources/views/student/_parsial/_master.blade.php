@@ -254,6 +254,9 @@
 
                             <ul aria-expanded="false" class="collapse">
 
+                                
+                                <li><a href="{{ route('teacher.index')}}">Data Guru </a></li>
+                                {{-- <li><a href="{{ route('student.index')}}">Data Siswa </a></li> --}}
                                 <li><a href="{{ route('teacher.create')}}">Input </a></li>
 
                             </ul>
@@ -266,6 +269,8 @@
 
                             <ul aria-expanded="false" class="collapse">
 
+                                {{-- <li><a href="{{ route('teacher.index')}}">Data Guru </a></li> --}}
+                                <li><a href="{{ route('student.index')}}">Data Siswa </a></li>
                                 <li><a href="{{ route('student.create')}}">Input </a></li>
 
                             </ul>
